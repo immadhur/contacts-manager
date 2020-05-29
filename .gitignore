@@ -1,0 +1,25 @@
+/node_modules
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/client/contacts-manager/node_modules
+/client/contacts-manager/.pnp
+/client/contacts-manager/.pnp.js
+
+# testing
+/client/contacts-manager/coverage
+
+# production
+/client/contacts-manager//build
+
+# misc
+/client/contacts-manager/.DS_Store
+/client/contacts-manager/.env.local
+/client/contacts-manager/.env.development.local
+/client/contacts-manager/.env.test.local
+/client/contacts-manager/.env.production.local
+
+/client/contacts-manager/npm-debug.log*
+/client/contacts-manager/yarn-debug.log*
+/client/contacts-manager/yarn-error.log*

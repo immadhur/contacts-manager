@@ -1,0 +1,60 @@
+.body{
+    width: 40%;
+    margin: 20px auto;
+    box-shadow: 2px 2px 22px rgb(177, 177, 177);
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    /* background-image: linear-gradient(135deg, orange, white); */
+    z-index: 0;
+}
+/* 
+.outer{
+    display: flex;
+} */
+
+.contactDetails{
+    display: flex;
+    /* align-items: flex-start; */
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.contactDetails p{
+    margin: 4px;
+}
+
+.contactDetails > :nth-child(1){
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.number{
+    margin-left: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.body button{
+    margin-right: 4px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.editBtn{
+    border: 1px solid orange;
+    color: orange;
+}
+
+.dltBtn{
+
+    border: 1px solid red;
+    color: red;
+}
+
+@media (max-width:500px){
+    .body{
+        width: 80%;
+    }
+}
