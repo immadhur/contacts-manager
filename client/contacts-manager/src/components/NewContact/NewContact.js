@@ -109,11 +109,10 @@ class ContactData extends Component {
         }
         try {
             this.setState({ loading: true });
-            let res
             if (this.props.data)
-                res = await axios.patch(`/contact/${this.props.id}`, dataToPost);
+                await axios.patch(`/contact/${this.props.id}`, dataToPost);
             else
-                res = await axios.post('/contacts/add', dataToPost);
+                await axios.post('/contacts/add', dataToPost);
             this.props.updated();
             this.props.close();
         }

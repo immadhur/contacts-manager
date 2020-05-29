@@ -25,12 +25,12 @@ const Home = (props) => {
     useEffect(() => {
         if (!isNewContactDialogVisible && dataUpdated)
             getContacts();
-    }, [isNewContactDialogVisible])
+    }, [isNewContactDialogVisible, dataUpdated])
 
     useEffect(() => {
         if (!isEditContactDialogVisible && dataUpdated)
             getContacts();
-    }, [isEditContactDialogVisible])
+    }, [isEditContactDialogVisible, dataUpdated])
 
     const getContacts = async () => {
         try {

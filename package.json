@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "npm install && node app.js",
+    "heroku-postbuild": "npm install && cd client/contacts-manager && npm install && npm install --only=dev && npm run build",
+    "dev": "concurrently \"node app.js\" \"cd client/contacts-manager && npm run start\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
